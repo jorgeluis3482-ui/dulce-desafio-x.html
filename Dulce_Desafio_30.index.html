@@ -139,3 +139,17 @@ $('snd').onclick=()=>{mute=!mute;$('snd').textContent=mute?'🔇':'🔊'};
 $('sh').onclick=async()=>{const t='Mi mejor puntaje en Dulce Desafío: '+ST.get('best',0).toLocaleString('es-AR')+' pts. ¡Los clásicos nunca fallan!';try{if(navigator.share)await navigator.share({text:t});else{await navigator.clipboard.writeText(t);$('sh').textContent='¡Copiado!'}}catch(e){}};
 newLevel();
 </script></body></html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dulce Desafío</title>
+</head>
+<body>
+  <script>
+    window.location.href =
+      "./Dulce_Desafio_30_niveles.html";
+  </script>
+</body>
+</html>
