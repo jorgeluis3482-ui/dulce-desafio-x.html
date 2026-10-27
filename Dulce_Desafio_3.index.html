@@ -138,4 +138,4 @@ B.addEventListener('pointerup',()=>{if(!start||busy){start=null;return}const s=s
 $('snd').onclick=()=>{mute=!mute;$('snd').textContent=mute?'🔇':'🔊'};
 $('sh').onclick=async()=>{const t='Mi mejor puntaje en Dulce Desafío: '+ST.get('best',0).toLocaleString('es-AR')+' pts. ¡Los clásicos nunca fallan!';try{if(navigator.share)await navigator.share({text:t});else{await navigator.clipboard.writeText(t);$('sh').textContent='¡Copiado!'}}catch(e){}};
 newLevel();
-
+</script></body></html>
